@@ -1,40 +1,67 @@
 *{
     background-color: rgba(237, 210, 99, 1);
+    /* margin: 20px; */
 }
 #searchDiv{
     text-align: center;
     padding: 50px;
+    background-color: rgba(237, 210, 99, 1);
 }
-#input{
+ #input{
     background-color: rgba(248, 247, 245, 1);
-    margin: 0;
+    border: 0;
+    border-radius: 5px 0px 0px 5px;
+    width: 500px;
+    margin-left: auto;
+    padding:5px 10px;
 }
-#button{
+#button-addon2{
     background-color: rgba(59, 45, 100, 1);
     color: aliceblue;
-    margin: 0;
+    margin-right: auto;
+    padding: 5px 15px;
+    border-radius: 0px 5px 5px 0px;
 }
-.food{
+.detailsBtn{
     border-radius: 10px;
-    text-align: center;
-    height: 300px;
-    width: 276px;
+    padding: 0%;
+    border: 0;
     background-color: rgba(248, 247, 245, 1);
+    text-align: center;
+    width: 276px;
     margin: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.food h4{
+.detailsBtn h6{
     background-color:rgba(248, 247, 245, 1) ;
     text-align: center;
+    padding-top: 5px;
 }
-.food img{
+.detailsBtn img{
     border-radius: 10px 10px 0px 0px;
     height: 260px;
     width: 276px;
     margin: 0;
 }
 #foodList{
+    padding: 0 100px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
+}
+.foodDetails{
+    /* background-color: rgba(237, 210, 99, 1); */
+    background-color:rgba(248, 247, 245, 1) ;
+    margin:100px auto;
+    width: 580px;
+}
+.foodDetails img{
+    width: 580px;
+    height: 310px;
+    background-color:rgba(248, 247, 245, 1) ; 
+    margin-bottom: 20px;
+}
+.foodDetails h1,h6,p{
+    background-color:rgba(248, 247, 245, 1) ;
+    margin-left: 20px;
 }
