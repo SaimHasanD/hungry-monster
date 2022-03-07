@@ -1,0 +1,40 @@
+*{
+    background-color: rgba(237, 210, 99, 1);
+}
+#searchDiv{
+    text-align: center;
+    padding: 50px;
+}
+#input{
+    background-color: rgba(248, 247, 245, 1);
+    margin: 0;
+}
+#button{
+    background-color: rgba(59, 45, 100, 1);
+    color: aliceblue;
+    margin: 0;
+}
+.food{
+    border-radius: 10px;
+    text-align: center;
+    height: 300px;
+    width: 276px;
+    background-color: rgba(248, 247, 245, 1);
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.food h4{
+    background-color:rgba(248, 247, 245, 1) ;
+    text-align: center;
+}
+.food img{
+    border-radius: 10px 10px 0px 0px;
+    height: 260px;
+    width: 276px;
+    margin: 0;
+}
+#foodList{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
