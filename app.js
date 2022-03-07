@@ -1,16 +1,25 @@
 const getFood = () => {
     const name = document.getElementById('input').value;
-    const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`
-    fetch(url)
-        .then(res => res.json())
-        .then(data => {
-            displayFood(data)
-        })
-        .catch(error => console.log(error))
+    console.log(name);
+    if (!name) {
+        alert('Please input a meal name');
+    } else {
+        const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`
+        fetch(url)
+            .then(res => res.json())
+            .then(data => {
+                displayFood(data); 
+            })
+            .catch(error => console.log(error))  
+    }
 }
 
 const displayFood = data => {
     let foodList = data.meals;
+    if (data === null) {
+        alert('input')
+    }
+    console.log(data);
     const foodDisplay = document.getElementById('foodList');
     foodDisplay.textContent="";
     for (let i = 0; i < foodList.length; i++) {
@@ -45,15 +54,19 @@ const displayFoodDetails = data => {
     const newDiv = document.createElement('div');
     newDiv.className = 'foodDetails';
     const foodDetail = `
-        <img src="${food.strMealThumb}" alt="">
+        <img class="card-img-top" src="${food.strMealThumb}" alt="">
         <h1>${food.strMeal}<h1/>
-        <h6>Ingredients</h6>
-        <p>${food.strIngredient1}</p>
-        <p>${food.strIngredient2}</p>
-        <p>${food.strIngredient3}</p>
-        <p>${food.strIngredient4}</p>
-        <p>${food.strIngredient5}</p>
-        <p>${food.strIngredient6}</p>
+        <h6>Ingredients</h6> <br>
+        <p>${food.strMeasure1} ${food.strIngredient1}</p>
+        <p>${food.strMeasure2} ${food.strIngredient2}</p>
+        <p>${food.strMeasure3} ${food.strIngredient3}</p>
+        <p>${food.strMeasure4} ${food.strIngredient4}</p>
+        <p>${food.strMeasure5} ${food.strIngredient5}</p>
+        <p>${food.strMeasure6} ${food.strIngredient6}</p>
+        <p>${food.strMeasure7} ${food.strIngredient7}</p>
+        <p>${food.strMeasure8} ${food.strIngredient8}</p>
+        <p>${food.strMeasure9} ${food.strIngredient9}</p>
+        <p>${food.strMeasure10} ${food.strIngredient10}</p>
         
     `
     document.getElementById('foodList').style.display = "none";
