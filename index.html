@@ -12,33 +12,38 @@
 </head>
 
 <body>
+    <!-- nav bar -->
     <nav class="navbar navbar-expand-lg navbar-light container ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img id="first-logo" src="Image/logo.svg"></a>
 
             <div class=" justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav ">
-                    <a class="nav-link active px-3"><b>Home</b></a>
-                    <a class="nav-link active px-3"><b>About</b></a>
-                    <a class="nav-link active px-3"><b>Recipes</b></a>
-                    <a class="nav-link active px-3"><b>Blog</b></a>
+                    <a class="nav-link active px-3" href="#home"><b>Home</b></a>
+                    <a class="nav-link active px-3" href="#searchDiv"><b>About</b></a>
+                    <a class="nav-link active px-3" href="#foodList"><b>Recipes</b></a>
+                    <a class="nav-link active px-3" href="#foodDetails"><b>Details</b></a>
                 </div>
             </div>
         </div>
     </nav>
     <section class="container">
+        <!-- search bar -->
         <div id="searchDiv" class="input-group">
-            <input id="input" type="text" placeholder="Search for Meal..." aria-describedby="button-addon2">
+            <input id="input" type="text" placeholder=" Search for Meal..." aria-describedby="button-addon2">
             <button onclick="getFood()" class="btn btn-outline-secondary" type="button"
                 id="button-addon2">Search</button>
         </div>
+        <!-- food details -->
         <div id="foodDetails">
 
         </div>
+        <!-- food list -->
         <div id="foodList">
 
         </div>
     </section>
+    <!-- javascript link -->
     <script src="app.js"></script>
 </body>
 

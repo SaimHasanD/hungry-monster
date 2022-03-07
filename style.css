@@ -1,11 +1,6 @@
-body{
-    
+*{ 
     margin: 0;
     padding: 0;
-}
-#searchDiv{
-    text-align: center;
-    padding: 50px;
 }
  #input{
     background-color: aliceblue;
@@ -30,10 +25,6 @@ body{
     margin: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.detailsBtn h6{
-    text-align: center;
-    padding: 10px;
-}
 .detailsBtn img{
     border-radius: 8px 8px 0px 0px;
     height: 230px;
@@ -53,11 +44,12 @@ body{
     padding-bottom: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.foodDetails img{
+.foodImage{
     width: 580px;
     height: 280px;
     margin-bottom: 20px;
     object-fit: cover;
+    border-radius:15px 15px 0px 0px;
 }
 .foodDetails h1,h6,p{
     margin-left: 20px;
