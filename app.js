@@ -4,6 +4,7 @@ const getFood = () => {
     console.log(name);
     if (!name) {
         alert('Please input a meal name');
+        document.getElementById('foodDetails').textContent = "";
     } else {
         const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`
         fetch(url)
@@ -35,6 +36,9 @@ const displayFood = data => {
             });
     } else {
         alert("Sorry, We couldn't find anything with this name");
+        document.getElementById('input').value = "";
+        document.getElementById('foodList').textContent = "";
+        document.getElementById('foodDetails').textContent = "";
     }
 
 }
